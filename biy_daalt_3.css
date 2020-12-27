@@ -1,0 +1,56 @@
+div {
+	padding: 10px;
+	border-radius: 10px;
+}
+.grow{
+	transition-property: transform ;
+	transition-duration: 1.5s;
+}
+.grow:hover {
+	transform: scale(1.5);
+}
+.center {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+.center:hover {
+	color: #FA0101;
+}
+.nav1{
+	width: 330px;
+	height: 400px;
+	overflow: hidden; 
+}
+.nav2{
+	width: 1100px;
+	animation-name: vvv;
+	animation-duration: 3s;
+}
+@keyframes vvv {
+	25% {transform: translateX(-300px);}
+	50% {transform: translateX(-600px);}
+}
+.title{
+			background-color: #8AC1F5;
+			color: white;
+			padding: 5px;
+			width: 100px;
+			cursor: -webkit-grab; cursor: grab;
+		}
+.text{
+			border:5px;
+			background-color: #66FCF1;
+			display: none;
+		}
+.container1 {
+			width: 300px;
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+		}
+.container1:hover .text{
+			display: block;
+ 		}
